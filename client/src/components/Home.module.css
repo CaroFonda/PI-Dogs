@@ -1,0 +1,171 @@
+.container {
+  background-image: url("../img/bg2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll; 
+  /* scroll = content that is too big to fit into an area, the overflow is clipped, and a scrollbar is added to see the rest of the content */
+}
+
+.title {
+  color: #771129;
+  font-family: Monospace, Arial;
+  font-size: 50px;
+}
+
+.filtersContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.link {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+  border-radius: 9px;
+  background: #707070;
+  color: #fff;
+  padding: 8px;
+  margin-top: 18px;
+  font-size: 16px;
+  transition-duration: 0.6s;
+  font-family: Microsoft JhengHei UI, sans-serif;
+  /* Transition duration allows property changes in CSS values, such as those that may be defined to occur on :hover or :focus, to occur smoothly over a specified duration */
+}
+
+.link:hover {
+  background-color: #97203c;
+  font-weight: bolder;
+}
+
+.selectA_Z {
+  background: #707070;
+  border: none;
+  font-size: 13px;
+  padding: 7px;
+  width: 100px;
+  color: #fff;
+  margin-top: 15px;
+  margin-left: 14px;
+  margin-right: 14px;
+  border-radius: 9px;
+  font-family: Microsoft JhengHei UI, sans-serif;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.selectA_Z:hover {
+  background: rgba(80, 78, 78, 0.699);
+}
+
+.selectWei {
+  background: #707070;
+  border: none;
+  font-size: 13px;
+  padding: 7px;
+  width: 165px;
+  color: #fff;
+  margin-top: 15px;
+  margin-left: 14px;
+  margin-right: 14px;
+  border-radius: 9px;
+  font-family: Microsoft JhengHei UI, sans-serif;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.selectWei:hover {
+  background: rgba(80, 78, 78, 0.699);
+}
+
+.selectFilter {
+  background: #707070;
+  border: none;
+  font-size: 13px;
+  padding: 7px;
+  width: 110px;
+  color: #fff;
+  margin-top: 15px;
+  margin-left: 14px;
+  margin-right: 14px;
+  border-radius: 9px;
+  font-family: Microsoft JhengHei UI, sans-serif;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.selectFilter:hover {
+  background: rgba(80, 78, 78, 0.699);
+}
+
+.selectTemp {
+  background: #707070;
+  border: none;
+  font-size: 13px;
+  padding: 7px;
+  width: 175px;
+  color: #fff;
+  margin-top: 15px;
+  margin-left: 14px;
+  margin-right: 14px;
+  border-radius: 9px;
+  font-family: Microsoft JhengHei UI, sans-serif;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.selectTemp:hover {
+  background: rgba(80, 78, 78, 0.699);
+}
+
+.remove {
+  background: #707070;
+  border: none;
+  font-size: 13px;
+  padding: 7px;
+  width: 140px;
+  color: #fff;
+  margin-top: 15px;
+  margin-left: 14px;
+  margin-right: 14px;
+  border-radius: 9px;
+  font-family: Microsoft JhengHei UI, sans-serif;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.remove:hover {
+  background: rgba(80, 78, 78, 0.699);
+}
+
+.containerCards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 5px;
+}
+.cards {
+  margin: 0px 25px 25px 25px;
+  background: rgba(184, 180, 180, 0.877);
+  border-radius: 7px;
+  transition-duration: 0.4s;
+}
+
+.cards:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+.card {
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-thumb {
+  background: #707070;
+  border-radius: 9px;
+}

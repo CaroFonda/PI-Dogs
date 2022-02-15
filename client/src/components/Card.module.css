@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.img {
+  width: 240px;
+  height: 240px;
+  border-radius: 9px;
+}
+
+.title {
+  color: #201a1a;
+  font-size: 30px;
+  font-family: Microsoft JhengHei UI, sans-serif;
+  font-weight: bolder;
+}
+
+.temp,
+.wei {
+  color: #201a1a;
+  font-family: Microsoft JhengHei UI, sans-serif;
+  font-weight: 400;
+}
+
+
+

@@ -1,0 +1,32 @@
+.input {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 6px;
+  width: 160px;
+  border: none;
+  font-family: Microsoft JhengHei UI, sans-serif;
+  background-color: #fff;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.button {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 6px;
+  width: fit-content;
+  border: #fff solid 3px;
+  font-family: MS PGothic, Arial, Helvetica, sans-serif;
+  background: #fff;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  font-weight: lighter;
+  font-size: 16px;
+
+}
+
+.button:hover{
+    background: #97203c;
+    color: #fff;
+    font-weight: bolder;
+}
