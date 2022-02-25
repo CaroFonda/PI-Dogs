@@ -6,7 +6,7 @@ import styles from "./Landing.module.css";
 export default function LandingPage() {
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>THE DOG API</h1>
+      <h1 className={styles.title}>It's all about dogs</h1>
       <div className={styles.btn_container2}>
         <Link to="/home">
           <button className={styles.btn}>Let's play</button>

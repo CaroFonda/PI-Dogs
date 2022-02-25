@@ -1,27 +1,27 @@
 .input {
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
   padding: 6px;
   width: 160px;
   border: none;
-  font-family: Microsoft JhengHei UI, sans-serif;
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;;
   background-color: #fff;
-  font-size: 16px;
+  font-size: 15px;
   font-style: italic;
 }
 
 .button {
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  padding: 6px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 4px;
   width: fit-content;
   border: #fff solid 3px;
-  font-family: MS PGothic, Arial, Helvetica, sans-serif;
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;;
   background: #fff;
   cursor: pointer;
   transition-duration: 0.4s;
   font-weight: lighter;
-  font-size: 16px;
+  font-size: 14px;
 
 }
 

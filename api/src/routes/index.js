@@ -13,11 +13,11 @@ const router = Router();
 
 // necesario => img, nombre, temperamento, peso, altura, años de vida, id
 
-const getApiData = async () => {
-  const apiUrl = await axios.get(
-    `https://api.thedogapi.com/v1/breeds?api_key=${YOUR_API_KEY}`
-  );
-  const apiInfo = await apiUrl.data.map((e) => {
+
+function getApiData(){
+  return axios.get(`https://api.thedogapi.com/v1/breeds?api_key=${YOUR_API_KEY}`)
+  .then((response) => response.data)
+  .then((d) => d.map((e)=> {
     return {
       name: e.name,
       id: e.id,
@@ -27,9 +27,28 @@ const getApiData = async () => {
       height: e.height.metric,
       life_span: e.life_span,
     };
-  });
-  return apiInfo;
-};
+  }))
+}
+
+
+
+// const getApiData = async () => {
+//   const apiUrl = await axios.get(
+//     `https://api.thedogapi.com/v1/breeds?api_key=${YOUR_API_KEY}`
+//   );
+//   const apiInfo = await apiUrl.data.map((e) => {
+//     return {
+//       name: e.name,
+//       id: e.id,
+//       image: e.image.url,
+//       temperament: e.temperament,
+//       weight: e.weight.metric,
+//       height: e.height.metric,
+//       life_span: e.life_span,
+//     };
+//   });
+//   return apiInfo;
+// };
 
 const getDbData = async () => {
   return await Dog.findAll({

@@ -61,8 +61,8 @@ function rootReducer(state = initalState, action) {
       let sorted_Arr =
         action.payload === "mayor_menor"
         ? state.dogs.sort(function (a, b) {
-              let grande = parseInt(a.weight)
-              let chico = parseInt(b.weight)
+              let grande = parseInt(a.weight.slice(4).trim())
+              let chico = parseInt(b.weight.slice(0, 2).trim())
               if (grande > chico) {
                   return -1;
               }

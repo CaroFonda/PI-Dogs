@@ -14,14 +14,17 @@ export default function SearchBar() {
     }
 
     function handleSubmit(e) {
-        e.preventDefault();   
-        dispatch(getBreedName(name));
+        e.preventDefault();
+        if (name.length === 0) {
+            return alert("Please enter a valid name");
+          } else {  
+        dispatch(getBreedName(name))};
         setName("")
     }
-
+   
     return (
         <div className={styles.container}>
-            <input type="text" value={name} placeholder="Insert a dog breed..." onChange={(e) => handleInput(e)} className={styles.input} />
+            <input type="text" value={name} placeholder="Breed..." onChange={(e) => handleInput(e)} className={styles.input} />
             <button type="submit" onClick={(e) => handleSubmit(e)} className={styles.button} > Search</button>
         </div>
     )

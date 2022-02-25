@@ -10,16 +10,16 @@ import SearchBar from "./SearchBar";
 
 export default function Home() {
   const dispatch = useDispatch();
-  const allDogs = useSelector((state) => state.dogs); // esto es lo mismo que mapStateToProps, pero con hooks
-  const [order, setOrder] = useState(""); // esto es solo un estado local para que me renderize el ordenamiento A-Z
-  const [orderr, setOrderr] = useState(""); // esto es solo un estado local para que me renderize el ordenamiento weight
+  const allDogs = useSelector((state) => state.dogs); // mapStateToProps
+  const [order, setOrder] = useState(""); // estado local ordenamiento A-Z
+  const [orderr, setOrderr] = useState(""); // estado local ordenamiento weight
   // paginado
-  //     declaro un estado local
-  const [currentPage, setCurrentPage] = useState(1); // en uno porque siempre empeza en la página n1
-  //     declaro otro estado local
+  
+  const [currentPage, setCurrentPage] = useState(1); // siempre empeza en la página n1
+ 
   const [dogsPerPage, setDogsPerPage] = useState(8); // dogs por página
   const indexOfLastDog = currentPage * dogsPerPage;
-  //    busco siempre el primer dog de la pagina
+
   const indexOfFirstDog = indexOfLastDog - dogsPerPage;
   const currentDogs = allDogs.slice(indexOfFirstDog, indexOfLastDog);//0/8 (el ultimo es excluyente, por eso hay 8 del 0 al 7)
 
@@ -31,13 +31,13 @@ export default function Home() {
   };
 
   useEffect(() => {
-    dispatch(getDogs()); // esto es lo mismo que mapDispatchToProps, pero con hooks
+    dispatch(getDogs()); 
     dispatch(getTemperaments());
   }, [dispatch]);
 
   function handleClick(e) {
     e.preventDefault();
-    dispatch(getDogs()); // esto es para volver a cargar todos la página
+    dispatch(getDogs()); 
   }
 
   function handleSortByName(e) {
@@ -65,11 +65,10 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>THE DOG API</h1>
+      <h1 className={styles.title}>It's all about dogs</h1>
       <div className={styles.filtersContainer}>
-        <SearchBar />
-        <Link to="/dog" className={styles.link}>Create a new dog breed</Link>
-        <div className={styles.inputs}>
+        <SearchBar /> 
+        <Link to="/dog" className={styles.link}>Create a new dog breed</Link> <div className={styles.inputs}>
           <button
             onClick={(e) => {
               handleClick(e);

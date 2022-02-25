@@ -100,3 +100,29 @@
     margin-right: auto;
   }
 }
+
+
+@media (min-width: 320px) {
+  .general {
+    width: 100%;
+    min-height: 100vh;
+  }
+  .title {
+    font-size: 27px;
+  }
+  .container {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .img {
+    width: 100%;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+

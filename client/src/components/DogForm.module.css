@@ -12,7 +12,7 @@
   background-size: cover;
 }
 
-.oo {
+.todo {
   background-color: #97203c;
   width: 800px;
   height: 450px;
@@ -26,7 +26,7 @@
 
 .title {
   color: rgb(54, 53, 53);
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
   font-size: 45px;
 }
@@ -38,6 +38,8 @@
   align-items: center;
   margin-top: auto;
   margin-bottom: auto;
+  margin-left: auto;
+  margin-right: 10%;
 }
 
 .delete {
@@ -53,6 +55,7 @@
   text-align: center;
   font-family: Microsoft JhengHei UI, sans-serif;
   border: none;
+  border-radius: 12px;
   /* border-top-right-radius: 12px;
   border-bottom-left-radius: 12px; */
   font-size: 16px;
@@ -67,8 +70,9 @@
   text-align: center;
   font-family: Microsoft JhengHei UI, sans-serif;
   border: none;
-  border-top-right-radius: 12px;
-  border-bottom-left-radius: 12px;
+  border-radius: 12px;
+  /* border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px; */
   font-size: 16px;
 }
 
@@ -81,8 +85,9 @@
   text-align: center;
   font-family: Microsoft JhengHei UI, sans-serif;
   border: none;
-  border-top-right-radius: 12px;
-  border-bottom-left-radius: 12px;
+  border-radius: 12px;
+  /* border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px; */
   font-size: 16px;
 }
 
@@ -95,8 +100,9 @@
   text-align: center;
   font-family: Microsoft JhengHei UI, sans-serif;
   border: none;
-  border-top-right-radius: 12px;
-  border-bottom-left-radius: 12px;
+  border-radius: 12px;
+  /* border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px; */
   font-size: 16px;
 }
 
@@ -109,8 +115,9 @@
   text-align: center;
   font-family: Microsoft JhengHei UI, sans-serif;
   border: none;
-  border-top-right-radius: 12px;
-  border-bottom-left-radius: 12px;
+  border-radius: 12px;
+  /* border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px; */
   font-size: 16px;
 }
 
@@ -123,8 +130,9 @@
   text-align: center;
   font-family: Microsoft JhengHei UI, sans-serif;
   border: none;
-  border-top-right-radius: 12px;
-  border-bottom-left-radius: 12px;
+  border-radius: 12px;
+  /* border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px; */
   font-size: 16px;
 }
 
@@ -137,8 +145,9 @@
   text-align: center;
   font-family: Microsoft JhengHei UI, sans-serif;
   border: none;
-  border-top-right-radius: 12px;
-  border-bottom-left-radius: 12px;
+  border-radius: 12px;
+  /* border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px; */
   font-size: 16px;
 }
 
@@ -151,6 +160,7 @@
   text-align: center;
   font-family: Microsoft JhengHei UI, sans-serif;
   border: none;
+  border-radius: 12px;
   /* border-top-right-radius: 12px;
   border-bottom-left-radius: 12px; */
   font-size: 16px;
@@ -166,6 +176,7 @@
   font-family: Microsoft JhengHei UI, sans-serif;
   /* border-top-right-radius: 12px;
   border-bottom-left-radius: 12px; */
+  border-radius: 12px;
   font-size: 16px;
   cursor: pointer;
 }
@@ -311,14 +322,14 @@
     font-size: 36px;
   }
 
-  .oo {
+  .todo {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
     padding: 0px;
-    border-radius: 20px;
+    border-radius: 10px;
     display: flex;
-    flex-direction: row;
+    flex-direction:row-reverse
   }
   .form {
     width: 50%;
@@ -388,3 +399,5 @@
     margin-right: auto;
   }
 }
+
+

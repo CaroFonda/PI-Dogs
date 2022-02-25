@@ -42,10 +42,6 @@ function validate(input) {
     errors.life_spanMax = "Max life span must be greater than Min";
   } else if (!input.image) {
     errors.image = "Please insert internet image URL";
-  } else if (
-    !/(http(s?):)([/|.|\w|\s|-])*\.(?:jpg|gif|png)/.test(input.image)
-  ) {
-    errors.image = "Please insert a valid image URL";
   }
   return errors;
 }
@@ -95,11 +91,11 @@ export default function CreateDogs() {
   }
 
   function handleSubmit(e) {
-    if (errors.name !== undefined) {
+    if (Object.keys(errors).length > 0) {
       document.getElementById("NoSubmit");
       return alert("Please complete the fields with valid data");
     }
-    const formCompleto = {
+     const formCompleto = {
       name: input.name,
       weight: input.wMin + " - " + input.wMax,
       height: input.hMin + " - " + input.hMax,
@@ -130,8 +126,8 @@ export default function CreateDogs() {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Create your breed!</h1>
-      <div className={styles.oo}>
+      <h1 className={styles.title}>Let's create something new!</h1>
+      <div className={styles.todo}>
         <form
           id="NoSubmit"
           onSubmit={(e) => handleSubmit(e)}
@@ -147,6 +143,7 @@ export default function CreateDogs() {
               onChange={(e) => handleChange(e)}
               placeholder="Name..."
               className={styles.name}
+              autoComplete="off"
             />
             {errors.name && <p className={styles.nameP}>{errors.name}</p>}
           </div>
